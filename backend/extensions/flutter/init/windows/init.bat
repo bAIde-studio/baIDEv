@@ -19,6 +19,10 @@ IF %ERRORLEVEL% NEQ 0 (
             start https://dart.dev/get-dart
         )
     )
+
+    ELSE (
+        echo "Dart is already installed."
+    )
 )
 
 :: 2. Check for Flutter
