@@ -58,6 +58,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@penpot-export/cli@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "@penpot-export/cli@npm:0.1.2"
+  dependencies:
+    "@penpot-export/core": "npm:0.1.2"
+    prettier: "npm:^3.0.2"
+  bin:
+    penpot-export: dist/bin/index.js
+  checksum: 0f74b8dea71ec85e5813b8ae2f1ab09247967c924028c87c3872f5a07f4ebf84901b8c6a43c8b7871c541ca21f3868ed77fdce7bffbba60a96107fb635ca1060
+  languageName: node
+  linkType: hard
+
+"@penpot-export/core@npm:0.1.2":
+  version: 0.1.2
+  resolution: "@penpot-export/core@npm:0.1.2"
+  dependencies:
+    node-fetch: "npm:2"
+    prettier: "npm:^3.0.2"
+    zod: "npm:^3.22.2"
+  checksum: da65d1c0f4deaa001f0e94cd1e1c17802a76e7328be2f72cce7934336af4ad332d9db09f41ddd84f80b209a73a94f8f914020f64e931005b53499d478f4f5e05
+  languageName: node
+  linkType: hard
+
 "@pkgjs/parseargs@npm:^0.11.0":
   version: 0.11.0
   resolution: "@pkgjs/parseargs@npm:0.11.0"
@@ -727,6 +750,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "exporter@workspace:."
   dependencies:
+    "@penpot-export/cli": "npm:^0.1.2"
     archiver: "npm:^6.0.2"
     cookies: "npm:^0.9.1"
     generic-pool: "npm:^3.9.0"
@@ -1369,6 +1393,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"node-fetch@npm:2":
+  version: 2.7.0
+  resolution: "node-fetch@npm:2.7.0"
+  dependencies:
+    whatwg-url: "npm:^5.0.0"
+  peerDependencies:
+    encoding: ^0.1.0
+  peerDependenciesMeta:
+    encoding:
+      optional: true
+  checksum: b55786b6028208e6fbe594ccccc213cab67a72899c9234eb59dba51062a299ea853210fcf526998eaa2867b0963ad72338824450905679ff0fa304b8c5093ae8
+  languageName: node
+  linkType: hard
+
 "node-gyp@npm:latest":
   version: 10.0.1
   resolution: "node-gyp@npm:10.0.1"
@@ -1567,6 +1605,15 @@ __metadata:
   bin:
     playwright: cli.js
   checksum: 82506d3937416439d42ed7940e03b62225651a049792b7c122cd1fb4318674e5789dbcd38e31c8e2f41d99e3b7dc9aa0898bfdd26dff5456eb3f89a166252bd8
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^3.0.2":
+  version: 3.2.5
+  resolution: "prettier@npm:3.2.5"
+  bin:
+    prettier: bin/prettier.cjs
+  checksum: ea327f37a7d46f2324a34ad35292af2ad4c4c3c3355da07313339d7e554320f66f65f91e856add8530157a733c6c4a897dc41b577056be5c24c40f739f5ee8c6
   languageName: node
   linkType: hard
 
@@ -2115,6 +2162,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tr46@npm:~0.0.3":
+  version: 0.0.3
+  resolution: "tr46@npm:0.0.3"
+  checksum: 047cb209a6b60c742f05c9d3ace8fa510bff609995c129a37ace03476a9b12db4dbf975e74600830ef0796e18882b2381fb5fb1f6b4f96b832c374de3ab91a11
+  languageName: node
+  linkType: hard
+
 "tsscmp@npm:1.0.6":
   version: 1.0.6
   resolution: "tsscmp@npm:1.0.6"
@@ -2193,6 +2247,23 @@ __metadata:
   version: 1.1.2
   resolution: "vm-browserify@npm:1.1.2"
   checksum: 0cc1af6e0d880deb58bc974921320c187f9e0a94f25570fca6b1bd64e798ce454ab87dfd797551b1b0cc1849307421aae0193cedf5f06bdb5680476780ee344b
+  languageName: node
+  linkType: hard
+
+"webidl-conversions@npm:^3.0.0":
+  version: 3.0.1
+  resolution: "webidl-conversions@npm:3.0.1"
+  checksum: 5612d5f3e54760a797052eb4927f0ddc01383550f542ccd33d5238cfd65aeed392a45ad38364970d0a0f4fea32e1f4d231b3d8dac4a3bdd385e5cf802ae097db
+  languageName: node
+  linkType: hard
+
+"whatwg-url@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "whatwg-url@npm:5.0.0"
+  dependencies:
+    tr46: "npm:~0.0.3"
+    webidl-conversions: "npm:^3.0.0"
+  checksum: 1588bed84d10b72d5eec1d0faa0722ba1962f1821e7539c535558fb5398d223b0c50d8acab950b8c488b4ba69043fd833cc2697056b167d8ad46fac3995a55d5
   languageName: node
   linkType: hard
 
@@ -2315,5 +2386,12 @@ __metadata:
     compress-commons: "npm:^5.0.1"
     readable-stream: "npm:^3.6.0"
   checksum: 18b4ecf28824bd165709de5056d53cf611f07e0b7578508fa94c497f17164722dc19a0739ea8b2c1a296de7d3f70f7ad558e7a3a4929240fb2730afc5fd60679
+  languageName: node
+  linkType: hard
+
+"zod@npm:^3.22.2":
+  version: 3.23.5
+  resolution: "zod@npm:3.23.5"
+  checksum: 5c74aefe2c0bc2f00d79c5a8724dae863054653bbad640964fdb009c52573349366fa70533f0dfcb912b007421294d437f063d466f9692eb77a2b620640c2794
   languageName: node
   linkType: hard
