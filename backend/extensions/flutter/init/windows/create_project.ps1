@@ -15,7 +15,7 @@ Write-Host "Starting Flutter development server..."
 flutter run
 
 # Inform the user about the server
-Write-Host "bAIdev is running locally at http://localhost:8080"
+Write-Host "bAIdev is running locally at http://localhost:9001"
 Write-Host "open in your browser and start coding!!!"
 
 
